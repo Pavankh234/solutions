@@ -1,44 +1,4 @@
-// // Import the 'fs' module to work with the file system
-// const fs = require('fs');
 
-// // Read the JSON file
-// fs.readFile('sample.json', 'utf8', (err, data) => {
-//     if (err) {
-//         console.error('Error reading the file:', err);
-//         return;
-//     }
-
-//     try {
-//         // Parse the JSON data
-//         const jsonData = JSON.parse(data);
-
-//         // Access 'n' and 'k'
-//         const n = jsonData.keys.n;
-//         const k = jsonData.keys.k;
-
-//         // Output 'n' and 'k'
-//         console.log(`n: ${n}`);
-//         console.log(`k: ${k}`);
-
-//         // Loop through the keys of the JSON object
-//         for (const key in jsonData) {
-//             // Skip the "keys" object itself
-//             if (key !== "keys" && jsonData[key].base && jsonData[key].value) {
-//                 const base = parseInt(jsonData[key].base); // Extract the base
-//                 const value = jsonData[key].value;         // Extract the encoded value
-
-//                 // Decode the value based on the base
-//                 const decodedValue = parseInt(value, base);
-
-//                 // Output the decoded pair (x, y)
-//                 console.log(`x: ${key}, y: ${decodedValue} (decoded from base ${base})`);
-//             }
-//         }
-
-//     } catch (err) {
-//         console.error('Error parsing JSON:', err);
-//     }
-// });
 
 
 // Import the 'fs' module to work with the file system
